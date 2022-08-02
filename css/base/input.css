@@ -1,0 +1,38 @@
+.m-input{
+    font-size: 13px;
+    height: 32px;
+    color: inherit;
+    position: relative;
+    padding: 0 10px;
+    border-radius: 2px;
+    border: 1px solid #babec5;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 12px 0 10px;
+    outline: none;
+}
+
+.m-input:hover{
+    outline: 1px solid #e2e2e2;
+}
+
+.m-input:focus{
+    border: 1px solid #2ca01c;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.m-input-date::placeholder{
+    font-style: italic;
+    font-size: 12px;
+}

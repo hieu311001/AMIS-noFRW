@@ -1,0 +1,51 @@
+@import url(./layout/ContentArea.css);
+@import url(./layout/MenuContainer.css);
+@import url(./layout/Form.css);
+@import url(./base/icon.css);
+@import url(./base/input.css);
+@import url(./base/input-icon.css);
+@import url(./base/button.css);
+@import url(./base/table.css);
+@import url(./base/tooltip.css);
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-color: initial;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #eceef1;
+    max-width: 100%;
+}
+
+.layout--main {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    font-size: 13px;
+    min-width: 1024px;
+    min-height: 768px;
+}
+
+#over {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}

@@ -1,0 +1,42 @@
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    display: none;
+    position: absolute;
+    min-width: 80px;
+    max-width: 120px;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 4px;
+    border-radius: 3px;
+    z-index: 100;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    display: block;
+}
+
+.tooltip-top {
+    bottom: 120%;
+    left: 10%;
+}
+
+.tooltip-right {
+    left: 110%;
+    top: 7%;
+}
+
+.tooltip-bottom {
+    top: 120%;
+    left: 15%;
+}
+
+.tooltip-left {
+    right: 110%;
+    top: -10%;
+}

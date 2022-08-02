@@ -1,0 +1,283 @@
+.content-area {
+    flex: 1;
+    min-height: calc(100vh - 48px);
+    min-width: 0;
+    height: 100%;
+    width: calc(100% - 48px);
+    background-color: #fff;
+}
+
+/* Content-top */
+.content-top {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-left__logo {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -843px -30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.top-left__combobox {
+    padding-left: 10px;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+}
+
+.combobox_arrow {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -80px -360px;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    margin: 0 10px;
+    transform: rotate(90deg);
+}
+
+.top-left__btn {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 15px;
+    padding: 0 12px;
+    border: 1px solid #ebedf0;
+    border-radius: 40px;
+    height: 30px;
+}
+
+.btn-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #4ea344;
+    border-radius: 50%;
+}
+
+.btn-text {
+    padding-left: 7px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all .2s ease;
+    color: #111;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-right__download {
+    margin-right: 15px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.top-right__input {
+    background: #fff;
+    color: #111;
+    margin-right: 20px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.input-search input {
+    width: 200px;
+}
+
+.top-icon {
+    position: relative;
+    height: 48px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-top{
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.top-right__account{
+    margin-right: 20px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+.account-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 6px;
+    border-radius: 15px;
+    border: 1px solid #e2e2e2;
+}
+
+.account-name{
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.account-arrow{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -1076px -32px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+/* Content-main */
+.content-main {
+    padding: 0 0 0 20px;
+    background-color: #eceef1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 48px);
+    overflow: auto;
+}
+
+.inner-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 48px);
+}
+
+.main-header {
+    padding: 24px 30px 16px 0;
+    background: #eceef1;
+    transition: top .25s;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left{
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+}
+
+.main-body{
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    padding-right: 30px;
+}
+
+.main-body__filter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.main-body__table{
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    flex-direction: column;
+    overflow: unset;
+    width: 100%;
+}
+
+.filter-input{
+    width: 240px;
+    margin-right: 10px;
+}
+
+.filter-input__search{
+    border-color: #babec5 !important;
+}
+
+.filter-input__search:hover{
+    border-color: #e2e2e2;
+}
+
+.filter-input__search:focus{
+    border-color: #2ca01c !important;
+}
+
+.btn-refresh{
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+
+#EmployeeTable::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #F5F5F5;
+} 
+
+#EmployeeTable::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #bbbbbb;
+}
+
+#EmployeeTable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+/* Content-pagging */
+.main-body__paging{
+    height:32px;
+    padding: 12px 42px 12px 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: sticky;
+    bottom: 0px;
+    z-index: 100;
+}
+
+.record-in-page{
+    margin: 0 16px;
+}
+
+.paging-right{
+    display: flex;
+    align-items:center;
+}
+
+.page-number{
+    display: flex;
+    align-items:center;
+}
+
+.page-number__number{
+    display: flex;
+}
+
+.page-index{
+    padding: 6.5px;
+}
+
+.input-paging{
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0;
+}
+
+
+
+
+

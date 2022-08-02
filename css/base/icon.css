@@ -1,0 +1,125 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    cursor: pointer;
+}
+
+
+.icon-tq{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -30px -1628px;
+}
+
+.icon-tm{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -73px -1628px;
+}
+
+.icon-tg{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -117px -1628px;
+}
+
+.icon-mh{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -161px -1628px;
+}
+
+.icon-bh{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -204px -1628px;
+}
+
+.icon-qlhd{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -249px -1628px;
+}
+
+.icon-k{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -291px -1628px;
+}
+
+.icon-ccdc{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -336px -1628px;
+}
+
+.icon-tscd{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -378px -1630px;
+}
+
+.icon-tl{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -467px -1659px;
+}
+
+.icon-t{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -423px -1630px;
+}
+
+.icon-gt{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -467px -1628px;
+}
+
+.icon-th{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -510px -1628px;
+}
+
+.icon-ns{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -378px -1659px;
+}
+
+.icon-bc{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -547px -1628px;
+}
+
+.icon-pttc{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -204px -1664px;
+}
+
+.icon-setting {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -675px -30px;
+}
+
+.icon-extend {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -568px -30px;
+}
+
+.icon-chat {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -899px -30px;
+}
+
+.icon-help {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -731px -30px;
+}
+
+.icon-notify {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -788px -30px;
+}
+
+.icon-download {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -2144px -200px;
+    margin: 0 10px;
+}
+
+.icon-download:hover {
+    background: url('/assets/Sprites.5c668001.png') no-repeat -2048px -200px;
+}
+
+.icon-refresh{
+    background: url('/assets/Sprites.5c668001.png') no-repeat -423px -201px;
+}
+
+.icon-refresh:hover{
+    background: url(/assets/Sprites.5c668001.png) no-repeat -1097px -88px;
+}
+
+.icon-close{
+    background: url(/assets/Sprites.5c668001.png) no-repeat -144px -144px;
+}
+
+.icon-department__arrow{
+    background: url(/assets/Sprites.5c668001.png) no-repeat -560px -359px;
+    width: 16px; 
+    height: 16px;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+.icon-date{
+    background: url(/assets/Sprites.5c668001.png) no-repeat -124px -308px;
+}

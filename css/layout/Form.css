@@ -1,0 +1,177 @@
+.form-detail {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 95vh;
+    min-width: 900px;
+    resize: both;
+    border-radius: 4px;
+}
+
+.popup-content, .popup-add{
+    height: 100%;
+}
+
+.form-detail .required{
+    color: #ff0000;
+}
+
+.m-label{
+    display: block;
+    font-size: 12px;
+    font-weight:700;
+    padding-bottom: 4px;
+}
+
+.popup-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-title{
+    display: flex;
+    align-items: center;
+    padding: 20px 12px 20px 32px;
+    width: 100%;
+}
+
+.popup-title__title{
+    font-size: 24px;
+    color: #111;
+    font-weight: 700;
+}
+
+.popup-title__checkbox{
+    padding: 0 1.5rem;
+    justify-content: flex-start;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-text{
+    padding-left: 10px;
+}
+
+.popup-close{
+    display: flex;
+    padding: 12px;
+}
+
+.popup-main{
+    transition: all .23s ease .1s;
+    flex-direction: column;
+    display: flex;
+    overflow: auto;
+    overflow-y: visible;
+    padding: 0 32px 20px 32px;
+    height: calc(100% - 73px);
+}
+
+.popup-content__top{
+    padding-bottom: 24px;
+    display: flex;
+}
+
+.popup-top__left{
+    padding-right: 26px;
+    width: 50%;
+}
+
+.popup-top__right{
+    width: 50%;
+}
+
+.popup-left__1, .popup-right__1, .popup-right__2{
+    display: flex;
+}
+
+.popup-code, .popup-birthday{
+    width: 40% !important;
+    padding-right: 6px;
+}
+
+.popup-name, .popup-gender{
+    width: 60% !important;
+}
+
+.popup-identityCode{
+    width: 60% !important;
+    padding-right: 6px;
+}
+
+.popup-identityDate{
+    width: 40% !important;
+}
+
+.popup-top__left>div{
+    padding-bottom: 12px;
+}
+
+.popup-top__right>div{
+    padding-bottom: 12px;
+}
+
+.popup-input__gender{
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+}
+
+.popup-gender>label{
+    padding-left: 10px;
+}
+
+.popup-bottom__flex{
+    display: flex;
+}
+
+.popup-bottom__1, .popup-bottom__2, .popup-bottom__3{
+    width: 25% !important;
+    padding-right: 6px;
+}
+
+.popup-address, .popup-bottom__1>div, .popup-bottom__2>div, .popup-bottom__3>div{
+    padding-bottom: 12px;
+}
+
+.popup-br{
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    margin: 32px 0 20px 0;
+    position: relative;
+}
+
+.popup-footer__btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-btn__right{
+    display: flex;
+}
+
+.popup-input__icon{
+    display: flex;
+    position: relative;
+}
+
+.icon-department{
+    position: absolute;
+    width: 32px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    outline: none;
+}

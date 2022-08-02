@@ -1,0 +1,53 @@
+.m-button {
+    background-color: #2ca01c;
+    color: #fff;
+    border-radius: 3px;
+    height: 34px;
+    padding: 6px 16px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 0;
+    transition: all .2s ease;
+}
+
+.m-button:hover {
+    background-color: #35bf22;
+}
+
+.m-button:focus {
+    background-color: #2ca01c;
+}
+
+.ms-button{
+    border: 1px solid #8d9096;
+    color: #111;
+    background-color: transparent;
+    border-radius: 3px;
+    height: 34px;
+    padding: 6px 16px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s ease;
+}
+
+.ms-button:hover {
+    background-color: #d2d3d6;
+}
+
+.ms-button:focus {
+    background-color: #bbbcbc;
+}
+
+.ms-button>div{
+    font-weight: 600;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    transition: all .25s ease;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+}
+

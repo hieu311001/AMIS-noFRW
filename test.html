@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+    <style>
+        .task {
+            top: 50px;
+            left: 200px;
+            background-color: #fff;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .task button {
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            position: relative;
+            color: inherit;
+            display: inline-block;
+            transition: all .25s ease;
+            white-space: nowrap;
+            font-size: 13px;
+            line-height: 13px;
+            color: #0075c0;
+        }
+
+        .table-btn__edit {
+            padding: 6px 1px 6px 16px;
+        }
+
+        .table-btn__arrow {
+            padding: 8px 10px;
+            width: 46px;
+        }
+
+        .btn-arrow__icon {
+            background: url(/assets/Sprites.5c668001.png) no-repeat -896px -359px;
+            width: 16px;
+            height: 16px;
+            min-width: 16px;
+            min-height: 16px;
+        }
+
+        .task-combobox {
+            padding-top: 10px;
+            position: absolute;
+            height: auto;
+            width: auto;
+            z-index: 9990;
+            transform: translate(-100%);
+            transition: opacity .25s, transform .25s, width .3s ease;
+            top: 50%;
+            left: 50%;
+            border-radius: 2px;
+            border: 1px solid #babec5;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="task">
+        <button class="table-btn__edit">Sửa</button>
+        <button class="table-btn__arrow">
+            <div class="btn-arrow__icon"></div>
+        </button>
+    </div>
+    <div class="task-combobox">
+        <div class="task-clone">Nhân bản</div>
+        <div class="task-delete">Xóa</div>
+        <div class="task-using">Ngừng sử dụng</div>
+    </div>
+</body>
+
+</html>
