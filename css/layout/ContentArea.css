@@ -1,9 +1,9 @@
 .content-area {
     flex: 1;
-    min-height: calc(100vh - 48px);
+    min-height: 0;
     min-width: 0;
     height: 100%;
-    width: calc(100% - 48px);
+    width: 100%;
     background-color: #fff;
 }
 
@@ -141,30 +141,15 @@
 .content-main {
     padding: 0 0 0 20px;
     background-color: #eceef1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 48px);
-    overflow: auto;
+    height: 100%;
 }
-
-.inner-content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 48px);
-}
-
 .main-header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
     padding: 24px 30px 16px 0;
     background: #eceef1;
     transition: top .25s;
-}
-
-.content-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .header-left{
@@ -174,6 +159,8 @@
 }
 
 .main-body{
+    overflow: auto;
+    scroll-behavior: smooth;
     position: relative;
     flex: 1;
     min-height: 0;
@@ -186,15 +173,6 @@
     justify-content: flex-end;
     background-color: #fff;
     padding: 16px;
-}
-
-.main-body__table{
-    display: flex;
-    background-color: #fff;
-    position: relative;
-    flex-direction: column;
-    overflow: unset;
-    width: 100%;
 }
 
 .filter-input{
@@ -219,6 +197,11 @@
     cursor: pointer;
 }
 
+.main-body__table{
+    width: 100%;
+    overflow:auto;
+    max-height: calc(100vh - 240px);
+}
 
 #EmployeeTable::-webkit-scrollbar {
     width: 8px;
@@ -239,14 +222,14 @@
 /* Content-pagging */
 .main-body__paging{
     height:32px;
-    padding: 12px 42px 12px 20px;
+    padding: 12px 42px 12px 12px;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content:space-between;
     position: sticky;
-    bottom: 0px;
-    z-index: 100;
+    bottom: 0;
+    z-index: 5;
 }
 
 .record-in-page{

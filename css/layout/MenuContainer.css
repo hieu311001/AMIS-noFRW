@@ -72,6 +72,10 @@
     border-left-color: rgb(44, 160, 28);
 }
 
+.menu-item-active .menu-item__text{
+    font-weight: 700;
+}
+
 .menu-item__icon {
     width: 24px;
 }

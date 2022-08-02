@@ -78,9 +78,20 @@ class Employee {
         let me = this,
             url = me.table.attr("Url");
 
+        $('body').append('<div id="over"></div>');
+        $('body').append('<div class="loader"></div>');
+        $('#over').fadeIn(300);
+
+        setTimeout(() => {
+            $("#over").remove();
+            $(".loader").remove();
+        }, 2000);
+
         // api lấy tất cả employee
         CommonFn.Ajax(url, Resource.Method.Get, {}, function (response) {
             if (response) {
+                $("#over").remove();
+                $(".loader").remove();
                 me.loadData(response);
             } else {
                 console.log("Có lỗi khi lấy dữ liệu từ server");
@@ -208,10 +219,12 @@ class Employee {
                         td.addClass(className);
                     } else if (dataType == 'task') {
                         let task = $(
+                            '<div>' +
                             '<button class="table-btn__edit">Sửa</button>' +
                             '<button class="table-btn__arrow">' +
                             '<div class="btn-arrow__icon"></div>' +
-                            '</button>'
+                            '</button>' +
+                            '</div>'
                         )
 
                         td.append(task);
@@ -296,11 +309,8 @@ class Employee {
             case "space-left":
                 className = "space-left";
                 break;
-            case "space-right__1":
-                className = "space-right__1";
-                break;
-            case "space-right__2":
-                className = "space-right__2";
+            case "space-right":
+                className = "space-right";
                 break;
             case "Checkbox":
                 className = "checkbox";
